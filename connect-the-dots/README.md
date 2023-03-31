@@ -2,7 +2,7 @@
 
 ## Live URL
 
-[d.harka.pages.sportradar.ag/connect-the-dots](https://d.harka.pages.sportradar.ag/connect-the-dots/)
+[daniel.harka.com/sportradar/connect-the-dots](https://daniel.harka.com/sportradar/connect-the-dots/)
 
 ## Todo list
 
