@@ -1,0 +1,16 @@
+{
+  "name": "aaaaaaaaargs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Choose one of the following input formats:\r string like arguments \"--foo bar\"\r array like arguments [\"--foo\", \"bar\"]",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon js/app.js --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
