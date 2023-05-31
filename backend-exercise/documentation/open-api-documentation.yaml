@@ -3,8 +3,10 @@ info:
   title: Bookstore API
   version: 1.0.0
   description: |-
-    This is a sample Bookstore Server based on the OpenAPI 3.0 specification.
-    Created by **[Gabriel Aichinger](https://github.com/mindthegabs)** and **[Daniel Harka](https://github.com/MrDanielHarka)**.
+    <style>.sc-kYHfwS.hjTfvW {display:none;}</style>
+     This is a sample Bookstore Server based on the OpenAPI 3.0 specification.  
+     
+     Created by <b><a href="https://github.com/mindthegabs" target="_blank">Gabriel Aichinger</a></b> and <b><a href="https://github.com/MrDanielHarka" target="_blank">Daniel Harka</a></b>.
 servers:
   - url: https://14cqtx-3000.csb.app
 paths:
@@ -54,6 +56,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Book'
+        '404':
+          description: No such book.
     put:
       summary: Update a specific book
       parameters:
@@ -71,11 +75,16 @@ paths:
               $ref: '#/components/schemas/BookInput'
       responses:
         '200':
-          description: Book updated successfully
+          description: Book updated successfully.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Book'
+        '404':
+          description: No such book.
+        '401':
+          description: You are not authorized for this action.
+
     delete:
       summary: Delete a specific book
       parameters:
@@ -87,7 +96,11 @@ paths:
             type: integer
       responses:
         '204':
-          description: Book deleted successfully
+          description: Book deleted successfully.
+        '404':
+          description: No such book.
+        '401':
+          description: You are not authorized for this action.
   '/authors':
     get:
       summary: Retrieve all authors
@@ -110,11 +123,15 @@ paths:
               $ref: '#/components/schemas/AuthorInput'
       responses:
         '201':
-          description: Author created successfully
+          description: Author added successfully.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Author'
+        '401':
+          description: You are not authorized for this action.
+        '404':
+          description: Author already exists.
   '/authors/{authorId}':
     get:
       summary: Retrieve a specific author
@@ -132,6 +149,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Author'
+        '404':
+          description: No such author.
     put:
       summary: Update a specific author
       parameters:
@@ -149,11 +168,15 @@ paths:
               $ref: '#/components/schemas/AuthorInput'
       responses:
         '200':
-          description: Author updated successfully
+          description: Author updated successfully.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Author'
+        '404':
+          description: No such author.
+        '401':
+          description: You are not authorized for this action.
     delete:
       summary: Delete a specific author
       parameters:
@@ -165,7 +188,11 @@ paths:
             type: integer
       responses:
         '204':
-          description: Author deleted successfully
+          description: Author deleted successfully.
+        '401':
+          description: You are not authorized for this action.
+        '404':
+          description: Failed to delete author. Author with id {authorId} does not exist.
   '/authors/{authorId}/books':
     get:
       summary: Retrieve all books by a specific author
@@ -185,6 +212,8 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Book'
+        '404':
+          description: No such author.
 components:
   schemas:
     Book:
