@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/sportradar/203-quiz/dist/",
+    "build": "vite build --base=/vue-practice/203-quiz/dist/",
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
