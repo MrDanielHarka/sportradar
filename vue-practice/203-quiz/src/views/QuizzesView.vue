@@ -1,39 +1,38 @@
 <script setup>
-    import q from "../data/quizes.json"
-    import {ref, watch} from "vue"
-    import Card from "../components/Card.vue"
-  
-    const quizes = ref(q)
-    const search = ref("")
-  
-    watch(search, () => {
-      quizes.value = q.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
-    })
-  
-  </script>
-  
-  <template>
-    <div>
-      <header>
-        <h1>Quizzes</h1>
-        <input v-model.trim="search" type="text" placeholder="Search...">
-      </header>
-      <div class="options-container">
-        <Card v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" />
-        <!-- <div v-for="quiz in quizes" :key="quiz.id" class="card">
+import q from '../data/quizzes.json';
+import { ref, watch } from 'vue';
+import Card from '../components/Card.vue';
+
+const quizzes = ref(q);
+const search = ref('');
+
+watch(search, () => {
+  quizzes.value = q.filter(quiz =>
+    quiz.name.toLowerCase().includes(search.value.toLowerCase())
+  );
+});
+</script>
+
+<template>
+  <div>
+    <header>
+      <h1>Quizzes</h1>
+      <input v-model.trim="search" type="text" placeholder="Search..." />
+    </header>
+    <div class="options-container">
+      <Card v-for="quiz in quizzes" :key="quiz.id" :quiz="quiz" />
+      <!-- <div v-for="quiz in quizzes" :key="quiz.id" class="card">
           <img :src="quiz.img" alt="">
           <div class="card-text">
             <h2>{{ quiz.name }}</h2>
             <p>{{quiz.questions.length}} questions</p>
           </div>
         </div> -->
-      </div>
     </div>
-  </template>
+  </div>
+</template>
 
 <style scoped>
-
-
 header {
   margin-bottom: 10px;
   margin-top: 30px;

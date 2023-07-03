@@ -1,8 +1,9 @@
 # Sportradar Repo
+
 - [Vue Practice](https://daniel.harka.com/sportradar/vue-practice/) ([Source Code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice))
-  - [Quiz](https://daniel.harka.com/sportradar/vue-practice/203-quiz/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/203-quiz/))
-  - [Notes](https://daniel.harka.com/sportradar/vue-practice/202-notes/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/202-notes/))
-  - [Counter](https://daniel.harka.com/sportradar/vue-practice/201-counter/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/201-counter/))
+  - [Quiz](https://daniel.harka.com/sportradar/vue-practice/203-quiz/dist/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/203-quiz/))
+  - [Notes](https://daniel.harka.com/sportradar/vue-practice/202-notes/dist/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/202-notes/))
+  - [Counter](https://daniel.harka.com/sportradar/vue-practice/201-counter/dist/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/201-counter/))
   - [Simple Tweets](https://daniel.harka.com/sportradar/vue-practice/101-simple-tweets/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/101-simple-tweets/))
   - [Assignment Lists - External - Refactored](https://daniel.harka.com/sportradar/vue-practice/011-assignment-lists-external-refactored/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/011-assignment-lists-external-refactored/))
   - [Assignment Lists - Sum - External](https://daniel.harka.com/sportradar/vue-practice/010-assignment-lists-sum-external/) ([Source code](https://github.com/MrDanielHarka/sportradar/tree/main/vue-practice/010-assignment-lists-sum-external/))
